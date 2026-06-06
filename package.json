@@ -4,7 +4,8 @@
   "description": "**Objective:** Build and run your first Node.js HTTP server to gain hands-on experience with server-side development.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Cornerstone-CICCC/first-nodejs-server-JoyIsHappii#readme",
   "devDependencies": {
-    "@types/node": "^25.9.1"
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3"
   }
 }
