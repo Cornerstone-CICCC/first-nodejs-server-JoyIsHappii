@@ -1,5 +1,12 @@
-import HTTP from 'http';
+import http from 'http';
 
 const PORT = 3000;
 
-console.log(`Starting server on http://localhost:${PORT}`);
+const server = http.createServer((req, res) => {
+	res.setHeader('Content-Type', 'text/plain');
+	res.end('Hello, World!');
+});
+
+server.listen(PORT, () => {
+	console.log(`Server running at http://localhost:${PORT}`);
+});
